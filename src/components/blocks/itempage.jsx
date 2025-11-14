@@ -21,7 +21,7 @@ export const ItemPage = () => {
                     </div>
                     <div className="mt-3">
                         <div className="flex flex-col gap-3 xl:gap-1">
-                            <span className="font-bold text-[30px] xl:text-[58.04px]">Product Name</span>
+                            <span className="font-bold text-[30px] xl:text-[58.04px]">Apple Watch</span>
                             <span className="text-[#60695C] font-medium text-[18px] xl:text-[31.25px]">Model/Type</span>
                             <div className="flex gap-3 text-[#12805D]">
                                 <span>RatingStars</span>
