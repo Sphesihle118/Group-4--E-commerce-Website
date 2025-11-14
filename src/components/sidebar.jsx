@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {SearchBar} from "./blocks/searchbar.jsx";
 
 const NavElements = [
     {
@@ -106,11 +105,11 @@ export const SideBarmenu = () => {
                 </nav>
             </div>
 
-            {/* Desktop Sidebar - hidden on mobile */}
+            {/* Desktop Sidebar - hidden on mobile note''''''lg:h-[925px] */}
             <nav className="hidden md:block bg-[#F3F3F3] h-screen w-[120px] p-4">
                 <div
                     className={`fixed 
-                        md:h-[525px] lg:h-[925px]
+                        h-[645px] lg:h-[645px] xl:h-[calc(100vh-32px)]
                         bg-white 
                         rounded-[10px]
                         flex flex-col 
@@ -132,8 +131,9 @@ export const SideBarmenu = () => {
                             <button
                                 onClick={() => setOpen(!open)}
                                 className="flex gap-3"
+                                aria-label="Toggle menu"
                             >
-                                {NavElements[1].icon}
+                                {open ? NavElements[5].icon : NavElements[1].icon}
                             </button>
 
                             {/* Store */}

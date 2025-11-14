@@ -1,11 +1,8 @@
-
-
-
 export const ShoppingBag = () => {
     return(
-        <div className="fixed">
+        <div className="hidden lg:block fixed">
             <div className="flex gap-10 mt-4">
-                <div className="border-l-3 h-[880px] rounded-3xl border-l-gray-800/60 ">
+                <div className="border-l-3 h-[600px] xl:h-[880px] rounded-3xl border-l-gray-800/60 ">
                 </div>
                 <div className=" text-center items-center justify-center px-1 py-12 w-[270px]">
                     <div className="font-medium text-[39.06px] pb-3">
