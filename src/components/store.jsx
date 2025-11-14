@@ -1,11 +1,21 @@
 import {SearchBar} from "./blocks/searchbar.jsx";
+import {ProductListing} from "./blocks/products.jsx";
+import {ShoppingBag} from "./blocks/bagCart.jsx";
 
 
 export const Storepage = () => {
 
     return (
-        <div className="hidden md:block  h-screen w-[120px] pt-8">
-           <SearchBar/>
+        <div className=" md:block h-screen w-screen pt-30 md:pt-8">
+            <div className="flex grid-2 gap-8">
+                <div>
+                    <div className="flex justify-center"><SearchBar/></div>
+                    <ProductListing/>
+                </div>
+                <div className="sm">
+                    <ShoppingBag/>
+                </div>
+            </div>
         </div>
     )
 }

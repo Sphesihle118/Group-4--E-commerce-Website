@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {SearchBar} from "./blocks/searchbar.jsx";
 
 const NavElements = [
     {
@@ -109,7 +110,7 @@ export const SideBarmenu = () => {
             <nav className="hidden md:block bg-[#F3F3F3] h-screen w-[120px] p-4">
                 <div
                     className={`fixed 
-                        h-[925px]
+                        md:h-[525px] lg:h-[925px]
                         bg-white 
                         rounded-[10px]
                         flex flex-col 
