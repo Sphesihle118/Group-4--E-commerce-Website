@@ -28,7 +28,7 @@ export const ItemPage = () => {
                                 <span>Rating</span>
                             </div>
 
-                            <span className="font-medium text-[19px] xl:text-[31.25px]">Price</span>
+                            <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">$ 529.99</span>
                             <span className="text-[20px]">statement</span>
                         </div>
                     </div>
