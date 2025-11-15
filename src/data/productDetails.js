@@ -6,4 +6,13 @@ export const productDetails = [
         price: "$529.99",
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero."
     }
+
+    {
+        product: 2,
+        name: "Sony ZX330BT",
+        smallDescription: "Light Grey",
+        price: "$39.99",
+        fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero."
+  
+    }
 ]
