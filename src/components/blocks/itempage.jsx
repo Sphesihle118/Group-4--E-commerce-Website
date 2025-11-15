@@ -29,7 +29,7 @@ export const ItemPage = () => {
                             </div>
 
                             <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">$ 529.99</span>
-                            <span className="text-[20px]">statement</span>
+                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero.</span> {/* Small description paragraph */}
                         </div>
                     </div>
                 </div>
