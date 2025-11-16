@@ -11,9 +11,9 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route index element={<HomePage />} />
+            <Route path="/" element={<HomePage />} /> {/*changed the index route to "/"path */}
             <Route path="*" element={<NotFoundPage />} />
-            <Route path="/" element={<ShippingAddress />} />
+            <Route path="/shipping" element={<ShippingAddress />} /> {/*added shipping "/"path */}
             <Route path="/payment" element={<PaymentPage />} />
             <Route path="/checkout" element={<CheckOutPage />} /> {/* Corrected the route path, CheckOutPage was spelled incorrectly*/}
             <Route path="/success" element={<OrderSuccess />} />
