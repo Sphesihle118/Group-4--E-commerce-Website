@@ -1,4 +1,5 @@
 import {ChevronLeft} from "lucide-react";
+import {products} from "../data/productsDetails"; // import productDetails path
 
 
 export const ItemPage = () => {
@@ -21,15 +22,15 @@ export const ItemPage = () => {
                     </div>
                     <div className="mt-3">
                         <div className="flex flex-col gap-3 xl:gap-1">
-                            <span className="font-bold text-[30px] xl:text-[58.04px]">Product Name</span>
-                            <span className="text-[#60695C] font-medium text-[18px] xl:text-[31.25px]">Model/Type</span>
+                            <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16]">Apple Watch</span>  {/* Product Name Text: dimensions and colour */}
+                            <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px]">Series 5 SE</span>
                             <div className="flex gap-3 text-[#12805D]">
                                 <span>RatingStars</span>
                                 <span>Rating</span>
                             </div>
 
-                            <span className="font-medium text-[19px] xl:text-[31.25px]">Price</span>
-                            <span className="text-[20px]">statement</span>
+                            <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">$ 529.99</span>
+                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero.</span> {/* Small description paragraph */}
                         </div>
                     </div>
                 </div>
