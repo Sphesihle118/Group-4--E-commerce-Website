@@ -30,7 +30,7 @@ export const ItemPage = () => {
                             <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px] whitespace-nowrap">{p.smallDescription}</span> {/* product model variable, dimensions and colour */}
                             <div className="flex gap-3 text-[#12805D]">
                                 <span>RatingStars</span>
-                                <span>Rating</span>
+                                <span>{p.rating}</span>
                             </div>
 
                             <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">{p.price}</span>
