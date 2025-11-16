@@ -1,4 +1,5 @@
 import {ChevronLeft} from "lucide-react";
+import {products} from "../data/productsDetails"; // import productDetails path
 
 
 export const ItemPage = () => {
