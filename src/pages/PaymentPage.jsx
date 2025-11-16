@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { CreditCardIcon } from '@heroicons/react/24/outline'
 import { CalendarIcon } from '@heroicons/react/24/outline'
 
-export default function AddPayment() {
+export default function PaymentPage() {
   const [defaultCard, setDefaultCard] = useState(false)
 
   return (
