@@ -89,23 +89,24 @@ export const ProductListing = () => {
                     </div>
                 </div>
 
+                {/*Product 3 data = Iphone11Black - assign variable for items*/}
                 <div className="bg-transparent w-[223.36px] h-[397px] p-4">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[2].productIMG} alt={productDetails[2].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[2].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                                {productDetails[2].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                               {productDetails[2].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
@@ -124,23 +125,24 @@ export const ProductListing = () => {
                     </div>
                 </div>
 
+                {/*Product 4 data = Iphone11Blue - assign variable for items*/}
                 <div className="bg-transparent w-[223.36px] h-[397px] p-4">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[3].productIMG} alt={productDetails[3].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[3].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                                {productDetails[3].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                                {productDetails[3].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
@@ -159,23 +161,24 @@ export const ProductListing = () => {
                     </div>
                 </div>
 
+                {/*Product 5 data = Iphone11Red - assign variable for items*/}
                 <div className="bg-transparent w-[223.36px] h-[397px] p-4">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[4].productIMG} alt={productDetails[4].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[4].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                                {productDetails[4].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                                {productDetails[4].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
@@ -194,24 +197,24 @@ export const ProductListing = () => {
                     </div>
                 </div>
 
-
+                {/*Product 6 data = Iphone11White - assign variable for items*/}
                 <div className="bg-transparent w-[223.36px] h-[397px] p-4">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[5].productIMG} alt={productDetails[5].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[5].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                                {productDetails[5].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                                {productDetails[5].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
@@ -230,23 +233,24 @@ export const ProductListing = () => {
                     </div>
                 </div>
 
+                {/*Product 7 data = Iphone13Red - assign variable for items*/}
                 <div className="bg-transparent w-[223.36px] h-[397px] p-4">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[6].productIMG} alt={productDetails[6].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[6].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                                {productDetails[6].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                                {productDetails[6].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
@@ -265,23 +269,24 @@ export const ProductListing = () => {
                     </div>
                 </div>
 
+                {/*Product 8 data = Iphone14Red - assign variable for items*/}
                 <div className="bg-transparent w-[223.36px] h-[397px] p-4">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[7].productIMG} alt={productDetails[7].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[7].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                               {productDetails[7].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                                {productDetails[7].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
