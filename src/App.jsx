@@ -1,23 +1,27 @@
 import {NotFoundPage} from "./pages/NotFound.jsx";
 import {HomePage} from "./pages/Home.jsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import PaymentPage from './pages/PaymentPage'; // Corrected the import statement/file path 
-import ShippingAddress from './pages/ShippingAddress'; // Corrected the import statement/file path 
-import CheckOutPage from './pages/CheckOutPage.jsx'; // Corrected the import statement/file path 
-import OrderSuccess from './pages/OrderSuccess'; // Corrected the import statement/file path 
+import PaymentPage from "./pages/PaymentPage.jsx"
+import ShippingAddress from "./pages/ShippingAddress.jsx"
+import CheckOutPage from "./pages/CheckOutPage.jsx"
+import OrderSuccess from "./pages/OrderSuccess.jsx"
 
 function App() {
-
   return (
     <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomePage />} /> {/*changed the index route to "/"path */}
-            <Route path="*" element={<NotFoundPage />} />
-            <Route path="/shipping" element={<ShippingAddress />} /> {/*added shipping "/"path */}
-            <Route path="/payment" element={<PaymentPage />} />
-            <Route path="/checkout" element={<CheckOutPage />} /> {/* Corrected the route path, CheckOutPage was spelled incorrectly*/}
-            <Route path="/success" element={<OrderSuccess />} />
-        </Routes>
+      <Routes>
+        {/* Default route */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Other pages */}
+        <Route path="/shipping" element={<ShippingAddress />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/checkout" element={<CheckOutPage />} />
+        <Route path="/success" element={<OrderSuccess />} />
+
+        {/* Catch-all for undefined routes */}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </BrowserRouter>
   )
 }
