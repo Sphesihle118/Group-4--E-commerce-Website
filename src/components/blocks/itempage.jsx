@@ -1,36 +1,40 @@
-import {ChevronLeft} from "lucide-react";
-import {products} from "../data/productsDetails"; // import productDetails path
-
+import { ChevronLeft } from "lucide-react";
+import {productDetails} from "../../data/productDetails.js"; //import the productDetails data
 
 export const ItemPage = () => {
-    return (
+ const p=productDetails[0]; // creating a variable for the first product 
+
+  return (
         <div className="pt-4">
             <div className="flex gap-3.5">
                 <ChevronLeft/> <span>Back</span>
             </div>
+
             <div className="mt-6 pb-23 border-b-1 border-l-gray-800/60">
                 <div className="flex gap-9">
                     <div className="flex gap-3.5">
                         <div className="flex flex-col gap-4">
-                            <div className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center">pic</div>
-                            <div className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center">pic</div>
-                            <div className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center">pic</div>
+                            <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/> {/*Replaced the div tag with img tag for the small images*/}
+                            <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/>
+                            <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/>
                         </div>
+
                         <div className="w-[258px] h-[318px] p-2 bg-white rounded-[13px] text-center">
-                            pic
+                            <img src={p.productIMG} alt={p.name} className="w-full h-full object-cover rounded -[13px]"/> {/*Added image tag for the main image*/}
                         </div>
                     </div>
+                    
                     <div className="mt-3">
                         <div className="flex flex-col gap-3 xl:gap-1">
-                            <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16]">Apple Watch</span>  {/* Product Name Text: dimensions and colour */}
-                            <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px]">Series 5 SE</span>
+                            <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16]">{p.name}</span>  {/* product name variable, dimensions and colour */}
+                            <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px]">{p.model}</span> {/* product model variable, dimensions and colour */}
                             <div className="flex gap-3 text-[#12805D]">
                                 <span>RatingStars</span>
                                 <span>Rating</span>
                             </div>
 
-                            <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">$ 529.99</span>
-                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero.</span> {/* Small description paragraph */}
+                            <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">{p.price}</span>
+                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">{p.description}</span> {/* Small description paragraph */}
                         </div>
                     </div>
                 </div>
@@ -49,7 +53,7 @@ export const ItemPage = () => {
             </div>
             <div className="mt-7 flex flex-col gap-2">
                 <span className="font-medium text-[27px] xl:text-[31.25px]">Description</span>
-                <span>DescriptionArray</span>
+                <span>{p.description}</span>
             </div>
         </div>
     )
