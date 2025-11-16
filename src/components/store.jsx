@@ -11,8 +11,8 @@ export const Storepage = () => {
             <div className="flex grid-2 gap-8 ">
                 <div>
                     {/* Home page*/}
-                    {/*<div className="flex justify-center"><SearchBar/></div>
-                    <ProductListing/>*/}
+                    <div className="flex justify-center"><SearchBar/></div>
+                    <ProductListing/>
 
                     {/* Item page*/}
                     <ItemPage/>
