@@ -53,7 +53,7 @@ export const ItemPage = () => {
             </div>
             <div className="mt-7 flex flex-col gap-2">
                 <span className="font-medium text-[27px] xl:text-[31.25px]">Description</span>
-                <span>{p.description}</span>
+                <span>{p.fullerDescription}</span>
             </div>
         </div>
     )
