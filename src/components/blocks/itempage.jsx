@@ -27,14 +27,14 @@ export const ItemPage = () => {
                     <div className="mt-3">
                         <div className="flex flex-col gap-3 xl:gap-1">
                             <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16]">{p.name}</span>  {/* product name variable, dimensions and colour */}
-                            <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px]">{p.model}</span> {/* product model variable, dimensions and colour */}
+                            <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px]">{p.smallDescription}</span> {/* product model variable, dimensions and colour */}
                             <div className="flex gap-3 text-[#12805D]">
                                 <span>RatingStars</span>
                                 <span>Rating</span>
                             </div>
 
                             <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">{p.price}</span>
-                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">{p.description}</span> {/* Small description paragraph */}
+                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">{p.fullDescription}</span> {/* Small description paragraph */}
                         </div>
                     </div>
                 </div>
