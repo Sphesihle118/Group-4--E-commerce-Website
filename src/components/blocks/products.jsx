@@ -1,28 +1,40 @@
 
 
+import {productDetails} from "../../data/productDetails"; // Import product details path
 
 
 export const ProductListing = () => {
+    const p1=productDetails[0]; // assign product 1 details
+    const p2=productDetails[1]; // assign product 2 details
+    const p3=productDetails[2]; // assign product 3 details
+    const p4=productDetails[3]; // assign product 4 details
+    const p5=productDetails[4]; // assign product 5 details
+    const p6=productDetails[5]; // assign product 6 details
+    const p7=productDetails[6]; // assign product 7 details
+    const p8=productDetails[7]; // assign product 8 details
+
     return (
         <div className="pt-10">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-y-1 bg-[#F3F3F3]">
+                
+                {/*Product 1 data = Apple Watch*/}
                 <div className="bg-transparent h-[397px] p-4 w-[223.36px]">
                     <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
-                        pic
+                        <img src={productDetails[0].productIMG} alt={productDetails[0].name} className="mx-auto"/>
                     </div>
                     <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="font-medium text-[20px] ">
-                                Product name
+                                {productDetails[0].name}
                             </span>
                             <span className="text-[#60695C] text-[16px]">
-                                Model/Type
+                               {productDetails[0].smallDescription}
                             </span>
                         </div>
 
                         <div className="flex justify-between px-2">
                             <span className="font-medium text-[20px]">
-                                Price
+                                {productDetails[0].price}
                             </span>
                             <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
                                 <svg
