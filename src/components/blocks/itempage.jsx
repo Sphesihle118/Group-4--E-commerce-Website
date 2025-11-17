@@ -34,7 +34,7 @@ export const ItemPage = () => {
                             </div>
 
                             <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">{p.price}</span>
-                            <span className="font-cabin text-[#1A1F16] w-[338px] h-[74px] text-[20px]">{p.fullDescription}</span> {/* Small description paragraph */}
+                            <span className="font-cabin text-[#1A1F16] w-[509.34px] h-[106px] text-[20px] ">{p.fullDescription}</span> {/* Small description paragraph */}
                         </div>
                     </div>
                 </div>
