@@ -88,7 +88,8 @@ export default function ShippingAddress() {
 
         {/* Navigation */}
         <div className="flex justify-between items-center text-sm text-gray-600 mt-6">
-          <a href="#" className="hover:underline">← Back</a>
+          <a href="/payment" className="hover:underline">← Back</a>
+            <a href="/success" className="hover:underline">Done →</a>
           <div className="flex items-center gap-1">
             <span className="text-green-600">🔒</span>
             <span>Secure Connection</span>

@@ -24,10 +24,12 @@ export default function OrderSuccess() {
 
         {/* Action Buttons */}
         <div className="flex justify-center gap-4 pt-4">
-          <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
-            <House className="w-5 h-5 text-white" />
-            Go to Home
-          </button>
+          <a href="/">
+              <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
+                  <House className="w-5 h-5 text-white" />
+                  Go to Home
+              </button>
+          </a>
           <button className="text-blue-600 hover:underline text-sm">View Order Details</button>
         </div>
       </div>

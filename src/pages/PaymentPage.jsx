@@ -85,19 +85,22 @@ export default function PaymentPage() {
                 Save this as your default payment method
               </label>
             </div>
-           <button
-            type="submit"
-            className="w-full flex items-center justify-center gap-2 bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition"
-           >
-             <CreditCard className="w-5 h-5 text-white" />
-               Add Payment Method
-            </button>
+           <a className="/shipping">
+               <button
+                   type="submit"
+                   className="w-full flex items-center justify-center gap-2 bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition"
+               >
+                   <CreditCard className="w-5 h-5 text-white" />
+                   Add Payment Method
+               </button>
+           </a>
           </form>
         </section>
 
         {/* Navigation */}
         <div className="flex justify-between items-center text-sm text-gray-600 mt-6">
-          <a href="#" className="hover:underline">← Back</a>
+          <a href="/checkout" className="hover:underline">← Back</a>
+            <a href="/Shipping" className="hover:underline">Add address →</a>
           <div className="flex items-center gap-1">
             <span className="text-green-600">🔒</span>
             <span>Secure Connection</span>

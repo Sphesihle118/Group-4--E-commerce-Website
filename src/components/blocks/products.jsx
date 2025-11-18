@@ -1,5 +1,3 @@
-
-
 import {productDetails} from "../../data/productDetails"; // Import product details path
 
 
@@ -19,9 +17,14 @@ export const ProductListing = () => {
                 
                 {/*Product 1 data = Apple Watch - assign variable for items*/}
                 <div className="Card-Container">
+
+
+                    <a href="/Item">
                     <div className="Photo-Card">
                         <img src={productDetails[0].productIMG} alt={productDetails[0].name} className="mx-auto"/>
                     </div>
+                    </a>
+
                     <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
                             <span className="Device-Name ">

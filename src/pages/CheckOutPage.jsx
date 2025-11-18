@@ -60,10 +60,12 @@ export default function CheckOutPage()  {
         {/* Action Buttons */}
         <div className="flex justify-between items-center mt-6">
           <button className="text-sm text-blue-600 hover:underline">← Back</button>
-          <button className="flex items-center gap-2 bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition">
-            <CreditCard className="w-5 h-5 text-white" />
-            Place Your Order
-          </button>
+          <a href="/payment">
+              <button className="flex items-center gap-2 bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition cursor-pointer">
+                  <CreditCard className="w-5 h-5 text-white" />
+                  Place Your Order
+              </button>
+          </a>
         </div>
       </div>
     </div>

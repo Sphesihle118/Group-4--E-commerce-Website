@@ -6,6 +6,7 @@ import ShippingAddress from "./pages/ShippingAddress.jsx"
 import CheckOutPage from "./pages/CheckOutPage.jsx"
 import OrderSuccess from "./pages/OrderSuccess.jsx"
 import {Productpage} from "./pages/itemPage.jsx";
+import {CheckItems} from "./pages/checkbagItemsPage.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 
         {/* Other pages */}
         <Route path="/Item" element={<Productpage />} />
+        <Route path="/check-bag" element={<CheckItems />} />
         <Route path="/shipping" element={<ShippingAddress />} />
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/checkout" element={<CheckOutPage />} />
