@@ -18,25 +18,28 @@ export const ProductListing = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-y-1 bg-[#F3F3F3]">
                 
                 {/*Product 1 data = Apple Watch - assign variable for items*/}
-                <div className="bg-transparent h-[397px] p-4 w-[223.36px]">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[0].productIMG} alt={productDetails[0].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[0].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
+                            <span className="Device-smallDescription">
                                {productDetails[0].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[0].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[0].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -45,7 +48,7 @@ export const ProductListing = () => {
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.9841 5.95547C15.8798 5.85047 15.7556 5.76721 15.6189 5.71048C15.4822 5.65376 15.3355 5.62471 15.1875 5.625H12.9375V5.0625C12.9375 4.01821 12.5227 3.01669 11.7842 2.27827C11.0458 1.53984 10.0443 1.125 9 1.125C7.95571 1.125 6.95419 1.53984 6.21577 2.27827C5.47734 3.01669 5.0625 4.01821 5.0625 5.0625V5.625H2.8125C2.51413 5.625 2.22798 5.74353 2.017 5.9545C1.80603 6.16548 1.6875 6.45163 1.6875 6.75V14.3438C1.6875 15.7148 2.84766 16.875 4.21875 16.875H13.7812C14.4445 16.8752 15.0814 16.6159 15.5559 16.1525C15.7947 15.9247 15.9849 15.6509 16.1149 15.3476C16.2449 15.0442 16.3122 14.7177 16.3125 14.3877V6.75C16.3129 6.60244 16.2842 6.45626 16.2278 6.31989C16.1714 6.18352 16.0886 6.05966 15.9841 5.95547ZM11.25 11.8125H9.5625V13.5C9.5625 13.6492 9.50324 13.7923 9.39775 13.8977C9.29226 14.0032 9.14918 14.0625 9 14.0625C8.85082 14.0625 8.70774 14.0032 8.60225 13.8977C8.49676 13.7923 8.4375 13.6492 8.4375 13.5V11.8125H6.75C6.60082 11.8125 6.45774 11.7532 6.35225 11.6477C6.24676 11.5423 6.1875 11.3992 6.1875 11.25C6.1875 11.1008 6.24676 10.9577 6.35225 10.8523C6.45774 10.7468 6.60082 10.6875 6.75 10.6875H8.4375V9C8.4375 8.85082 8.49676 8.70774 8.60225 8.60225C8.70774 8.49676 8.85082 8.4375 9 8.4375C9.14918 8.4375 9.29226 8.49676 9.39775 8.60225C9.50324 8.70774 9.5625 8.85082 9.5625 9V10.6875H11.25C11.3992 10.6875 11.5423 10.7468 11.6477 10.8523C11.7532 10.9577 11.8125 11.1008 11.8125 11.25C11.8125 11.3992 11.7532 11.5423 11.6477 11.6477C11.5423 11.7532 11.3992 11.8125 11.25 11.8125ZM11.8125 5.625H6.1875V5.0625C6.1875 4.31658 6.48382 3.60121 7.01126 3.07376C7.53871 2.54632 8.25408 2.25 9 2.25C9.74592 2.25 10.4613 2.54632 10.9887 3.07376C11.5162 3.60121 11.8125 4.31658 11.8125 5.0625V5.625Z"
-                                    fill="white"/>
+                                          fill="white"/>
                                 </svg>
 
                             </button>
@@ -54,25 +57,28 @@ export const ProductListing = () => {
                 </div>
  
                 {/*Product 2 data = Sony ZX - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[1].productIMG} alt={productDetails[1].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
-                               {productDetails[1].name}
+                            <span className="Device-Name ">
+                                {productDetails[1].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
-                                {productDetails[1].smallDescription}
+                            <span className="Device-smallDescription">
+                               {productDetails[1].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[1].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[1].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -90,25 +96,28 @@ export const ProductListing = () => {
                 </div>
 
                 {/*Product 3 data = Iphone11Black - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[2].productIMG} alt={productDetails[2].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[2].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
-                                {productDetails[2].smallDescription}
+                            <span className="Device-smallDescription">
+                               {productDetails[2].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
-                               {productDetails[2].price}
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
+                                {productDetails[2].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[2].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -126,25 +135,28 @@ export const ProductListing = () => {
                 </div>
 
                 {/*Product 4 data = Iphone11Blue - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[3].productIMG} alt={productDetails[3].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[3].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
-                                {productDetails[3].smallDescription}
+                            <span className="Device-smallDescription">
+                               {productDetails[3].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[3].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[3].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -162,25 +174,28 @@ export const ProductListing = () => {
                 </div>
 
                 {/*Product 5 data = Iphone11Red - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[4].productIMG} alt={productDetails[4].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[4].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
-                                {productDetails[4].smallDescription}
+                            <span className="Device-smallDescription">
+                               {productDetails[4].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[4].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[4].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -198,25 +213,28 @@ export const ProductListing = () => {
                 </div>
 
                 {/*Product 6 data = Iphone11White - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[5].productIMG} alt={productDetails[5].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[5].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
-                                {productDetails[5].smallDescription}
+                            <span className="Device-smallDescription">
+                               {productDetails[5].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[5].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[5].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -234,25 +252,28 @@ export const ProductListing = () => {
                 </div>
 
                 {/*Product 7 data = Iphone13Red - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[6].productIMG} alt={productDetails[6].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[6].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
-                                {productDetails[6].smallDescription}
+                            <span className="Device-smallDescription">
+                               {productDetails[6].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[6].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[6].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"
@@ -270,25 +291,28 @@ export const ProductListing = () => {
                 </div>
 
                 {/*Product 8 data = Iphone14Red - assign variable for items*/}
-                <div className="bg-transparent w-[223.36px] h-[397px] p-4">
-                    <div className="w-[191.36px] bg-white rounded-[22px] h-[232px] text-center shadow-xs">
+                <div className="Card-Container">
+                    <div className="Photo-Card">
                         <img src={productDetails[7].productIMG} alt={productDetails[7].name} className="mx-auto"/>
                     </div>
-                    <div className="flex flex-col justify-between h-[110px] pt-3 pl-2">
+                    <div className="flex flex-col gap-3 md:justify-between h-[110px] pt-3 pl-2">
                         <div className="flex flex-col">
-                            <span className="font-medium text-[20px] ">
+                            <span className="Device-Name ">
                                 {productDetails[7].name}
                             </span>
-                            <span className="text-[#60695C] text-[16px]">
+                            <span className="Device-smallDescription">
                                {productDetails[7].smallDescription}
                             </span>
                         </div>
 
-                        <div className="flex justify-between px-2">
-                            <span className="font-medium text-[20px]">
+                        <div className="flex justify-between md:px-2">
+                            <span className="Device-Price">
                                 {productDetails[7].price}
                             </span>
-                            <button className="w-[34px] bg-black h-[34px] rounded-[9px]">
+                            <span className="smallDevice-Price">
+                                {productDetails[7].price}
+                            </span>
+                            <button className="AddtoCart-Button">
                                 <svg
                                     className="block ml-auto mr-auto max-w-2/4"
                                     width="18"

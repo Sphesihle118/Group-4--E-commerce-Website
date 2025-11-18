@@ -1,7 +1,7 @@
 import { ChevronLeft } from "lucide-react";
 import {productDetails} from "../../data/productDetails.js"; //import the productDetails data
 
-export const ItemPage = () => {
+export const ItemBlock = () => {
  const p=productDetails[0]; // creating a variable for the first product 
 
   return (

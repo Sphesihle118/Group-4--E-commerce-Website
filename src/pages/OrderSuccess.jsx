@@ -1,4 +1,5 @@
-import { CheckCircleIcon, HomeIcon } from '@heroicons/react/24/outline'
+import {CircleCheck, House} from "lucide-react";
+
 
 export default function OrderSuccess() {
   return (
@@ -6,7 +7,7 @@ export default function OrderSuccess() {
       <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-8 text-center space-y-6">
         
         {/* Success Icon */}
-        <CheckCircleIcon className="mx-auto w-16 h-16 text-green-500" />
+        <CircleCheck className="mx-auto w-16 h-16 text-green-500" />
 
         {/* Success Message */}
         <h1 className="text-2xl font-bold text-gray-800">Order Placed Successfully!</h1>
@@ -24,7 +25,7 @@ export default function OrderSuccess() {
         {/* Action Buttons */}
         <div className="flex justify-center gap-4 pt-4">
           <button className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
-            <HomeIcon className="w-5 h-5 text-white" />
+            <House className="w-5 h-5 text-white" />
             Go to Home
           </button>
           <button className="text-blue-600 hover:underline text-sm">View Order Details</button>

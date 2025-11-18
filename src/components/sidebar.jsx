@@ -58,7 +58,7 @@ export const SideBarmenu = () => {
 
     return (
         <>
-            {/* Mobile Header - visible only on mobile/tablet */}
+            {/* Mobile Header that is only visible on mobile/tablet */}
             <div className="md:hidden fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
                 <div className="flex items-center justify-between p-4">
                     {NavElements[0].icon}
@@ -137,7 +137,7 @@ export const SideBarmenu = () => {
                             </button>
 
                             {/* Store */}
-                            <button className="flex gap-3 ">
+                            <button className="flex gap-3 rounded-[10px] ">
                                 {NavElements[2].icon}
                                 {open && <span className="font-medium">Store</span>}
                             </button>

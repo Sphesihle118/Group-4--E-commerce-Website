@@ -3,3 +3,32 @@
 html{
     background: #F3F3F3;
 }
+
+.Card-Container{
+    @apply bg-transparent h-[300px] w-[133.36px] p-4 md:h-[397px] md:w-[223.36px] lg:h-[300px] lg:w-[160.36px] xl:h-[397px] xl:w-[230.36px];
+    /*bg-transparent 223  p-4*/
+}
+
+.Photo-Card{
+    @apply w-[116.36px] bg-white rounded-[22px] h-[142px] md:w-[191.36px] md:h-[232px] md:pt-4 lg:pt-0.5 shadow-xs lg:h-[150px] lg:w-[120.36px] xl:w-[191.36px] xl:h-[232px] xl:pt-4;
+}
+
+.Device-Name{
+    @apply font-medium text-[13px] md:text-[20px] lg:text-[15px] xl:text-[20px];/*20px*/
+}
+
+.Device-smallDescription{
+    @apply text-[#60695C] text-[10px] md:text-[16px];/*16px*/
+}
+
+.Device-Price{
+    @apply font-medium text-[20px] hidden md:block;
+}
+
+.smallDevice-Price{
+    @apply font-medium text-[10px] md:hidden;
+}
+
+.AddtoCart-Button{
+    @apply w-[34px] hidden bg-black h-[34px] rounded-[9px] md:block lg:w-[27px] lg:h-[27px] xl:w-[34px] xl:h-[34px];
+}

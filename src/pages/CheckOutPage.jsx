@@ -1,4 +1,5 @@
-import { HomeIcon, CreditCardIcon } from '@heroicons/react/24/outline'
+import {CreditCard} from "lucide-react";
+
 
 export default function CheckOutPage()  {
   return (
@@ -21,7 +22,7 @@ export default function CheckOutPage()  {
           <h2 className="text-lg font-semibold text-gray-800">Payment Method</h2>
           <div className="text-sm text-gray-700 space-y-1">
             <p className="flex items-center gap-2">
-              <CreditCardIcon className="w-5 h-5 text-gray-500" />
+              <CreditCard className="w-5 h-5 text-gray-500" />
               Mastercard ending in 1252
             </p>
             <p>$53.21 gift card balance</p>
@@ -60,7 +61,7 @@ export default function CheckOutPage()  {
         <div className="flex justify-between items-center mt-6">
           <button className="text-sm text-blue-600 hover:underline">← Back</button>
           <button className="flex items-center gap-2 bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition">
-            <CreditCardIcon className="w-5 h-5 text-white" />
+            <CreditCard className="w-5 h-5 text-white" />
             Place Your Order
           </button>
         </div>

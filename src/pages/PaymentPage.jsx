@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { CreditCardIcon } from '@heroicons/react/24/outline'
-import { CalendarIcon } from '@heroicons/react/24/outline'
+import {Calendar, CreditCard} from "lucide-react";
 
 export default function PaymentPage() {
   const [defaultCard, setDefaultCard] = useState(false)
@@ -14,12 +13,12 @@ export default function PaymentPage() {
           <h2 className="text-xl font-semibold text-gray-800 mb-4">SELECT A CARD</h2>
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2 border rounded-lg p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer">
-              <CreditCardIcon className="w-6 h-6 text-gray-600" />  
+              <CreditCard className="w-6 h-6 text-gray-600" />
                <p className="text-sm text-gray-600">MasterCard</p>
               <p className="text-lg font-semibold text-gray-800">•••• •••• •••• 4242</p>
             </div>
             <div className="flex items-center gap-2 border rounded-lg p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer">
-              <CreditCardIcon className="w-6 h-6 text-gray-600" /> 
+              <CreditCard className="w-6 h-6 text-gray-600" />
               <p className="text-sm text-gray-600">VISA Debit</p>
               <p className="text-lg font-semibold text-gray-800">•••• •••• •••• 2894</p>
             </div>
@@ -43,7 +42,7 @@ export default function PaymentPage() {
               <label className="block text-sm font-medium text-gray-700">Card Number</label>
               <div className="relative">
           {/* Icon on the left */}
-           <CreditCardIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+           <CreditCard className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
               <input
                 type="text"
                 name="cardnumber"
@@ -56,7 +55,7 @@ export default function PaymentPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700">Expiry Date</label>
                  <div className="relative">
-                <CalendarIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
                   type="text"
                   name="expiry"
@@ -90,7 +89,7 @@ export default function PaymentPage() {
             type="submit"
             className="w-full flex items-center justify-center gap-2 bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition"
            >
-             <CreditCardIcon className="w-5 h-5 text-white" />
+             <CreditCard className="w-5 h-5 text-white" />
                Add Payment Method
             </button>
           </form>

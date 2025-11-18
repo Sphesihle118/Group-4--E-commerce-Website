@@ -23,7 +23,7 @@ export const SearchBar = ({ onSearch }) => {
                 placeholder="Apple Watch, Samsung S21, Macbook Pro, ..."
                 value={searchTerm}
                 onChange={handleChange}
-                className="flex-grow w-[320px] md:w-[507px] bg-white p-3  rounded-[13px] focus:outline-none focus:ring-2 focus:ring-black/30 inset-shadow-xs shadow-lg pl-5"
+                className="flex-grow w-[250px] md:w-[507px] bg-white p-3  rounded-[13px] focus:outline-none focus:ring-2 focus:ring-black/30 inset-shadow-xs shadow-lg pl-5"
             />
 
         </form>
