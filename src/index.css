@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
+
+.Cabin-font{
+    font-family: 'Cabin', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
 
 html{
     background: #F3F3F3;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.kbody{
+    font-family: "Droid Sans Mono Slashed", sans-serif;
 }
 
 .Card-Container{
@@ -31,6 +46,10 @@ html{
 
 .AddtoCart-Button{
     @apply w-[34px] hidden bg-black h-[34px] rounded-[9px] md:block lg:w-[27px] lg:h-[27px] xl:w-[34px] xl:h-[34px] cursor-pointer transform duration-600 ease-in-out hover:scale-[1.2];
+}
+
+.bagrelativeButton{
+    @apply transform duration-800 ease-in-out hover:scale-[1.1]
 }
 
 .Photo-Card2{
@@ -73,5 +92,44 @@ html{
 }
 
 .Bagprice{
+    @apply text-black text-[10px] md:text-[15px] xl:text-[20px] xl:pt-[25px]
+}
+
+
+.Card-Container3{
+    @apply bg-white md:flex gap-6 lg:h-[240px] md:w-[630px] lg:w-[700px] border-b-1  ;
+    /*bg-transparent md:h-[397px] md:w-[223.36px] h-[250px] w-[300px] p-4 lg:h-[260px] lg:w-[500.36px] md:h-[270px] md:w-[600.36px] xl:h-[335px] xl:w-[900.36px] -6*/
+}
+
+.Photo-Card3{
+    @apply w-[115.36px] h-[170px] bg-white rounded-[22px]
+}
+
+.BagItemName3{
+    @apply font-normal text-[15px] md:text-[20px] xl:text-[25.25px]
+}
+
+.BagItemsmDes3{
+    @apply text-[#60695C] text-[10px] md:text-[13px] xl:text-[18px]
+}
+
+
+.BagItembgDes3{
+    @apply text-black text-[12px] md:text-[13px] xl:text-[17px] wrap-break-word overflow-hidden lg:block h-[20px] xl:h-[20px] xl:w-[550px] font-normal
+}
+
+.starcontainer3{
+    @apply flex items-center mt-4
+}
+
+.bagstarratings3{
+    @apply w-[120px]
+}
+
+.ratingvalue3{
+    @apply text-[#12805D] text-[10px] md:text-[15px] xl:text-[20px]
+}
+
+.Bagprice3{
     @apply text-black text-[10px] md:text-[15px] xl:text-[20px] xl:pt-[25px]
 }

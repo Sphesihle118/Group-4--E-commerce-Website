@@ -1,60 +1,132 @@
 import { ChevronLeft } from "lucide-react";
-import {productDetails} from "../../data/productDetails.js"; //import the productDetails data
+import {productDetails} from "../../data/productDetails.js";
 
 export const ItemBlock = () => {
  const p=productDetails[0]; // creating a variable for the first product 
 
   return (
         <div className="pt-4">
-            <div className="flex gap-3.5">
-                <ChevronLeft/> <span>Back</span>
-            </div>
+            <div className="lg:hidden">
 
-            <div className="mt-6 pb-23 border-b-1 border-l-gray-800/60">
-                <div className="flex gap-9">
-                    <div className="flex gap-3.5">
-                        <div className="flex flex-col gap-4">
-                            <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/> {/*Replaced the div tag with img tag for the small images*/}
-                            <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/>
-                            <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/>
-                        </div>
-
-                        <div className="w-[258px] h-[318px] p-2 bg-white rounded-[13px] text-center">
-                            <img src={p.productIMG} alt={p.name} className="w-full h-full object-cover rounded -[13px]"/> {/*Added image tag for the main image*/}
-                        </div>
+                <a href="/">
+                    <div className="cursor-pointer flex gap-3.5 items-center">
+                        <ChevronLeft/> <span>Back</span>
                     </div>
-                    
-                    <div className="mt-3">
-                        <div className="flex flex-col gap-3 xl:gap-1">
-                            <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16] whitespace-nowrap">{p.name}</span>  {/* product name variable, dimensions and colour */}
-                            <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px] whitespace-nowrap">{p.smallDescription}</span> {/* product model variable, dimensions and colour */}
-                            <div className="flex gap-3 text-[#12805D]">
-                                <span>RatingStars</span>
-                                <span>{p.rating}</span>
+                </a>
+
+                <div className=" mt-6 pb-10 border-b-1 border-l-gray-800/60 w-full flex justify-center">
+                    <div className="flex flex-col gap-9">
+
+                        <div className=" flex gap-3.5 justify-center">
+                            <div className="flex flex-col gap-4 items-center">
+                                <img src={p.productIMG} alt={p.name} className="w-[77.66px] h-[86px] p-2 bg-white rounded-[13px]" />
+                                <img src={p.productIMG} alt={p.name} className="w-[77.66px] h-[86px] p-2 bg-white rounded-[13px]" />
+                                <img src={p.productIMG} alt={p.name} className="w-[77.66px] h-[86px] p-2 bg-white rounded-[13px]" />
                             </div>
 
-                            <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">{p.price}</span>
-                            <span className="font-cabin text-[#1A1F16] w-[509.34px] h-[106px] text-[20px] ">{p.fullDescription}</span> {/* Small description paragraph */}
+                            <div className="w-[258px] h-[318px] p-2 bg-white rounded-[13px] text-center">
+                                <img src={p.productIMG} alt={p.name} className="w-full h-full object-cover rounded-[13px]" />
+                            </div>
+                        </div>
+
+                        <div className="mt-3 flex flex-col items-center text-center pl-9">
+                            <div className="flex flex-col gap-3 xl:gap-1 items-center">
+
+                            <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16] whitespace-nowrap">
+                                {p.name}
+                            </span>
+
+                                <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px] whitespace-nowrap">
+                            {p.smallDescription}
+                                </span>
+
+                                <div className="flex gap-3 text-[#12805D] items-center justify-center">
+                                    <span>RatingStars</span>
+                                    <span>{p.rating}</span>
+                                </div>
+
+                                <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">
+                                    {p.price}
+                                </span>
+
+                                <span className="font-cabin text-[#1A1F16] w-[509.34px] h-[106px] text-[20px] leading-tight">
+                                    {p.fullDescription}
+                                </span>
+
+                                <a href="/checkout"><button className="float-end cursor-pointer bagrelativeButton mt-5">
+                                    <div className="text-center items-center justify-center flex gap-4 mt-7 px-4 py-2 w-[170px] rounded-[14px] bg-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.3122 7.94062C21.173 7.80063 21.0075 7.68961 20.8252 7.61398C20.6429 7.53835 20.4474 7.49961 20.25 7.5H17.25V6.75C17.25 5.35761 16.6969 4.02226 15.7123 3.03769C14.7277 2.05312 13.3924 1.5 12 1.5C10.6076 1.5 9.27226 2.05312 8.28769 3.03769C7.30312 4.02226 6.75 5.35761 6.75 6.75V7.5H3.75C3.35218 7.5 2.97064 7.65804 2.68934 7.93934C2.40804 8.22064 2.25 8.60218 2.25 9V19.125C2.25 20.9531 3.79688 22.5 5.625 22.5H18.375C19.2593 22.5003 20.1086 22.1545 20.7413 21.5367C21.0596 21.233 21.3132 20.8679 21.4865 20.4634C21.6599 20.059 21.7495 19.6236 21.75 19.1836V9C21.7506 8.80326 21.7122 8.60834 21.6371 8.42652C21.5619 8.24469 21.4515 8.07955 21.3122 7.94062ZM15 15.75H12.75V18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18V15.75H9C8.80109 15.75 8.61032 15.671 8.46967 15.5303C8.32902 15.3897 8.25 15.1989 8.25 15C8.25 14.8011 8.32902 14.6103 8.46967 14.4697C8.61032 14.329 8.80109 14.25 9 14.25H11.25V12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12V14.25H15C15.1989 14.25 15.3897 14.329 15.5303 14.4697C15.671 14.6103 15.75 14.8011 15.75 15C15.75 15.1989 15.671 15.3897 15.5303 15.5303C15.3897 15.671 15.1989 15.75 15 15.75ZM15.75 7.5H8.25V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V7.5Z" fill="white"/>
+                                        </svg>
+
+                                        <span className="text-white text-[20px]">View Bag</span>
+                                    </div>
+                                </button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button className="float-end">
-                    <div className="text-center items-center justify-center flex gap-4 mt-7 px-4 py-2 w-[170px] rounded-[14px] bg-black">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.3122 7.94062C21.173 7.80063 21.0075 7.68961 20.8252 7.61398C20.6429 7.53835 20.4474 7.49961 20.25 7.5H17.25V6.75C17.25 5.35761 16.6969 4.02226 15.7123 3.03769C14.7277 2.05312 13.3924 1.5 12 1.5C10.6076 1.5 9.27226 2.05312 8.28769 3.03769C7.30312 4.02226 6.75 5.35761 6.75 6.75V7.5H3.75C3.35218 7.5 2.97064 7.65804 2.68934 7.93934C2.40804 8.22064 2.25 8.60218 2.25 9V19.125C2.25 20.9531 3.79688 22.5 5.625 22.5H18.375C19.2593 22.5003 20.1086 22.1545 20.7413 21.5367C21.0596 21.233 21.3132 20.8679 21.4865 20.4634C21.6599 20.059 21.7495 19.6236 21.75 19.1836V9C21.7506 8.80326 21.7122 8.60834 21.6371 8.42652C21.5619 8.24469 21.4515 8.07955 21.3122 7.94062ZM15 15.75H12.75V18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18V15.75H9C8.80109 15.75 8.61032 15.671 8.46967 15.5303C8.32902 15.3897 8.25 15.1989 8.25 15C8.25 14.8011 8.32902 14.6103 8.46967 14.4697C8.61032 14.329 8.80109 14.25 9 14.25H11.25V12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12V14.25H15C15.1989 14.25 15.3897 14.329 15.5303 14.4697C15.671 14.6103 15.75 14.8011 15.75 15C15.75 15.1989 15.671 15.3897 15.5303 15.5303C15.3897 15.671 15.1989 15.75 15 15.75ZM15.75 7.5H8.25V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V7.5Z" fill="white"/>
-                        </svg>
+                <div className="mt-7 flex flex-col gap-2 px-5">
+                    <span className="font-medium text-[27px]">Description</span>
+                    <span className="text-[17px]">{p.fullerDescription}</span>
+                </div>
+            </div>
 
-                        <span className="text-white text-[20px]">View Bag</span>
+
+            <div className="hidden lg:block">
+                <a href="/">
+                    <div className="flex gap-3.5">
+                        <ChevronLeft/> <span>Back</span>
                     </div>
-                </button>
+                </a>
+
+                <div className="mt-6 pb-23 border-b-1 border-l-gray-800/60">
+                    <div className="flex gap-9">
+                        <div className="flex gap-3.5">
+                            <div className="flex flex-col gap-4">
+                                <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/> {/*Replaced the div tag with img tag for the small images*/}
+                                <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/>
+                                <img src={p.productIMG} alt={p.name} className="w-[49.66px] h-[58px] p-2 bg-white rounded-[13px] text-center"/>
+                            </div>
+
+                            <div className="w-[258px] h-[318px] p-2 bg-white rounded-[13px] text-center">
+                                <img src={p.productIMG} alt={p.name} className="w-full h-full object-cover rounded -[13px]"/> {/*Added image tag for the main image*/}
+                            </div>
+                        </div>
+
+                        <div className="mt-3">
+                            <div className="flex flex-col gap-3 xl:gap-1">
+                                <span className="font-bold font-cabin text-[30px] xl:text-[58.04px] w-[338px] h-[74px] text-[#1A1F16] whitespace-nowrap">{p.name}</span>  {/* product name variable, dimensions and colour */}
+                                <span className="font-cabin text-[#1A1F16] opacity-50 font-medium text-[18px] xl:text-[31.25px] w-[147px] h-[38px] whitespace-nowrap">{p.smallDescription}</span> {/* product model variable, dimensions and colour */}
+                                <div className="flex gap-3 text-[#12805D]">
+                                    <span>RatingStars</span>
+                                    <span>{p.rating}</span>
+                                </div>
+
+                                <span className="font-cabin text-[#1A1F16] font-medium text-[19px] xl:text-[31.25px] w-[118px] h-[38px]">{p.price}</span>
+                                <span className="font-cabin text-[#1A1F16] w-[509.34px] h-[106px] text-[20px] ">{p.fullDescription}</span> {/* Small description paragraph */}
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/checkout"><button className="float-end cursor-pointer bagrelativeButton">
+                        <div className="text-center items-center justify-center flex gap-4 mt-7 px-4 py-2 w-[170px] rounded-[14px] bg-black">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.3122 7.94062C21.173 7.80063 21.0075 7.68961 20.8252 7.61398C20.6429 7.53835 20.4474 7.49961 20.25 7.5H17.25V6.75C17.25 5.35761 16.6969 4.02226 15.7123 3.03769C14.7277 2.05312 13.3924 1.5 12 1.5C10.6076 1.5 9.27226 2.05312 8.28769 3.03769C7.30312 4.02226 6.75 5.35761 6.75 6.75V7.5H3.75C3.35218 7.5 2.97064 7.65804 2.68934 7.93934C2.40804 8.22064 2.25 8.60218 2.25 9V19.125C2.25 20.9531 3.79688 22.5 5.625 22.5H18.375C19.2593 22.5003 20.1086 22.1545 20.7413 21.5367C21.0596 21.233 21.3132 20.8679 21.4865 20.4634C21.6599 20.059 21.7495 19.6236 21.75 19.1836V9C21.7506 8.80326 21.7122 8.60834 21.6371 8.42652C21.5619 8.24469 21.4515 8.07955 21.3122 7.94062ZM15 15.75H12.75V18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18V15.75H9C8.80109 15.75 8.61032 15.671 8.46967 15.5303C8.32902 15.3897 8.25 15.1989 8.25 15C8.25 14.8011 8.32902 14.6103 8.46967 14.4697C8.61032 14.329 8.80109 14.25 9 14.25H11.25V12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12V14.25H15C15.1989 14.25 15.3897 14.329 15.5303 14.4697C15.671 14.6103 15.75 14.8011 15.75 15C15.75 15.1989 15.671 15.3897 15.5303 15.5303C15.3897 15.671 15.1989 15.75 15 15.75ZM15.75 7.5H8.25V6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75V7.5Z" fill="white"/>
+                            </svg>
+
+                            <span className="text-white text-[20px]">View Bag</span>
+                        </div>
+                    </button></a>
 
 
 
+                </div>
+                <div className="mt-7 flex flex-col gap-2">
+                    <span className="font-medium text-[27px] xl:text-[31.25px]">Description</span>
+                    <span>{p.fullerDescription}</span>
+                </div>
             </div>
-            <div className="mt-7 flex flex-col gap-2">
-                <span className="font-medium text-[27px] xl:text-[31.25px]">Description</span>
-                <span>{p.fullerDescription}</span>
-            </div>
+
         </div>
     )
 }
