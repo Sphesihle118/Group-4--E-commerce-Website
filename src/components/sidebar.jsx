@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {NavLink} from "react-router-dom";
 
 const NavElements = [
     {
@@ -81,7 +82,7 @@ export const SideBarmenu = () => {
             >
                 <nav className="flex flex-col h-full p-6">
                     <div className="flex flex-col gap-6 flex-grow">
-                        <a href="/">
+                        <Navlink to="/">
                             <button
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors"
@@ -89,10 +90,10 @@ export const SideBarmenu = () => {
                                 {NavElements[2].icon}
                                 <span className="font-medium">Store</span>
                             </button>
-                        </a>
+                        </Navlink>
 
 
-                        <a href="./check-bag" >
+                        <NavLink to="./check-bag" >
                             <button
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors"
@@ -100,7 +101,7 @@ export const SideBarmenu = () => {
                                 {NavElements[3].icon}
                                 <span className="font-medium">Bag</span>
                             </button>
-                        </a>
+                        </NavLink>
                     </div>
 
                     <button className="p-3 bg-[#E5252C] rounded-lg flex items-center justify-center gap-3 hover:bg-[#c91f24] transition-colors">
@@ -113,25 +114,17 @@ export const SideBarmenu = () => {
             {/* Desktop Sidebar - hidden on mobile note''''''lg:h-[925px] */}
             <nav className="hidden md:block bg-[#F3F3F3] h-screen w-[120px] p-4">
                 <div
-                    className={`fixed 
-                        h-[645px] lg:h-[645px] xl:h-[calc(100vh-32px)]
-                        bg-white 
-                        rounded-[10px]
-                        flex flex-col 
-                        justify-between 
-                        p-3.5
-                        transition-all 
-                        duration-700
+                    className={`fixed h-[645px] lg:h-[645px] xl:h-[calc(100vh-32px)] bg-white rounded-[10px] flex flex-col justify-between p-3.5 transition-all duration-700
                         ${open ? "w-[135px]" : "w-[72px] items-center"}
                     `}
                 >
                     <div className={`flex flex-col gap-10 duration-300 ${open ? "pl-1" : "items-center"}`}>
                         {/* Logo */}
-                       <a href="/">
+                       <NavLink to="/">
                            <div className="flex gap-3 cursor-pointer">
                                {NavElements[0].icon}
                            </div>
-                       </a>
+                       </NavLink>
 
                         {/* Icons */}
                         <div className="flex flex-col gap-10">
@@ -144,21 +137,21 @@ export const SideBarmenu = () => {
                             </button>
 
                             {/* Store */}
-                            <a href="/">
+                            <NavLink to="/">
                                 <button className="flex hover:fill-white hover:text-white gap-3 rounded-[10px] py-1.5 hover:bg-black  cursor-pointer">
                                     {NavElements[2].icon}
                                     {open && <span className="font-medium">Store</span>}
                                 </button>
-                            </a>
+                            </NavLink>
 
 
                             {/* Bag */}
-                            <a href="./check-bag" >
+                            <NavLink to="./check-bag" >
                                 <button className="flex hover:fill-white hover:text-white gap-3 rounded-[10px] py-1.5 hover:bg-black  cursor-pointer ">
                                     {NavElements[3].icon}
                                     {open && <span className="font-medium">Bag</span>}
                                 </button>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
 
