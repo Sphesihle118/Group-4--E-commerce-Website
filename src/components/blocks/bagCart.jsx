@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 export const ShoppingBag = () => {
     return(
         <div className="hidden lg:block">
@@ -16,7 +18,7 @@ export const ShoppingBag = () => {
                         <div className="w-[80px] h-[80px] bg-white rounded-[12px]">k</div>
                     </div>
 
-                    <a href="/check-bag">
+                    <NavLink to="/check-bag">
                         <button className="cursor-pointer bagrelativeButton">
                             <div className="text-center items-center justify-center flex gap-4 mt-7 px-4 py-2 w-[170px] rounded-[14px] bg-black">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +27,7 @@ export const ShoppingBag = () => {
                                 <span className="text-white text-[20px]">View Bag</span>
                             </div>
                         </button>
-                    </a>
+                    </NavLink>
 
                 </div>
             </div>

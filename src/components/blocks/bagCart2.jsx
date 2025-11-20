@@ -1,5 +1,6 @@
 import React from "react";
 import { productDetails2 } from "../../data/productDetails2.js";
+import {NavLink} from "react-router-dom";
 export const ShoppingBag2 = () => {
     return(
         <div className="hidden lg:block ">
@@ -39,7 +40,7 @@ export const ShoppingBag2 = () => {
                                 </div>*/}
                     </div>
 
-                    <a href="./checkout">
+                    <NavLink to="/checkout">
                         <button className="cursor-pointer bagrelativeButton">
                             <div className="text-center items-center justify-center flex gap-4 mt-3 px-4 py-2 w-[170px] rounded-[14px] bg-black">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +49,7 @@ export const ShoppingBag2 = () => {
                                 <span className="text-white text-[20px]">Checkout</span>
                             </div>
                         </button>
-                    </a>
+                    </NavLink>
 
                 </div>
             </div>

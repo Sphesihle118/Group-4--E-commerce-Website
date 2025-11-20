@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { House } from 'lucide-react'
+import {NavLink} from "react-router-dom";
 
 export default function ShippingAddress() {
   const [defaultAddress, setDefaultAddress] = useState(false)
@@ -88,8 +89,8 @@ export default function ShippingAddress() {
 
         {/* Navigation */}
         <div className="flex justify-between items-center text-sm text-gray-600 mt-6">
-          <a href="/payment" className="hover:underline">← Back</a>
-          <a href="/success" className="hover:underline">Done →</a>
+          <NavLink to="/payment" className="hover:underline">← Back</NavLink>
+          <NavLink to="/success" className="hover:underline">Done →</NavLink>
           <div className="flex items-center gap-1 text-green-600 font-medium">
             <span>🔒</span>
             <span>Secure Connection</span>

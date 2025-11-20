@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Calendar, CreditCard } from 'lucide-react'
+import {NavLink} from "react-router-dom";
 
 export default function PaymentPage() {
   const [defaultCard, setDefaultCard] = useState(false)
@@ -101,8 +102,8 @@ export default function PaymentPage() {
 
         {/* Navigation */}
         <div className="flex justify-between items-center text-sm text-gray-600 mt-6">
-          <a href="/checkout" className="hover:underline">← Back</a>
-          <a href="/shipping" className="hover:underline">Add address →</a>
+          <NavLink to="/checkout" className="hover:underline">← Back</NavLink>
+          <NavLink to="/shipping" className="hover:underline">Add address →</NavLink>
           <div className="flex items-center gap-1 text-green-600 font-medium">
             <span>🔒</span>
             <span>Secure Connection</span>

@@ -1,6 +1,7 @@
 import {ChevronLeft, CreditCard} from "lucide-react";
 import {productDetails2} from "../data/productDetails2.js";
 import React, {useState} from "react";
+import {NavLink} from "react-router-dom";
 
 
 const QuantityCounter = ({ quantity, onIncrease, onDecrease, minQuantity = 1 }) => {
@@ -305,19 +306,19 @@ export default function CheckOutPage()  {
 
                         <p className="font-semibold text-[20px] py-2 text-red-600 text-center border-b-1 border-t-1 border-blue-200 ">Order Total:  $6609.78</p>
                     </div>
-                    <a href="/payment">
+                    <NavLink to="/payment">
                         <button className="flex w-[230px] text-center items-center gap-2 bg-black text-white px-10 py-2 rounded-[14px] hover:bg-gray-800 transition cursor-pointer">
                             <CreditCard className="w-5 h-5 text-white" />
                             Place Your Order
                         </button>
-                    </a>
+                    </NavLink>
                 </section>
 
                 {/* Action Buttons */}
 
             </div>
             <div className="mt-6 float-end">
-                <a href="/check-bag"><button className="text-sm border-1 rounded-[14px] py-2 px-5 text-black hover:underline cursor-pointer flex"><ChevronLeft /> Back</button></a>
+                <NavLink to="/check-bag"><button className="text-sm border-1 rounded-[14px] py-2 px-5 text-black hover:underline cursor-pointer flex"><ChevronLeft /> Back</button></NavLink>
             </div>
         </div>
 
