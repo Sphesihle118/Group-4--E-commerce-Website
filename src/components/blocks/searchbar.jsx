@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { productDetails} from "../../data/productDetails.js";
+
 
 export const SearchBar = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
