@@ -82,7 +82,7 @@ export const SideBarmenu = () => {
             >
                 <nav className="flex flex-col h-full p-6">
                     <div className="flex flex-col gap-6 flex-grow">
-                        <Navlink to="/">
+                        <NavLink to="/">
                             <button
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors"
@@ -90,10 +90,10 @@ export const SideBarmenu = () => {
                                 {NavElements[2].icon}
                                 <span className="font-medium">Store</span>
                             </button>
-                        </Navlink>
+                        </NavLink>
 
 
-                        <NavLink to="./check-bag" >
+                        <NavLink to="/check-bag" >
                             <button
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors"
@@ -146,7 +146,7 @@ export const SideBarmenu = () => {
 
 
                             {/* Bag */}
-                            <NavLink to="./check-bag" >
+                            <NavLink to="/check-bag" >
                                 <button className="flex hover:fill-white hover:text-white gap-3 rounded-[10px] py-1.5 hover:bg-black  cursor-pointer ">
                                     {NavElements[3].icon}
                                     {open && <span className="font-medium">Bag</span>}
