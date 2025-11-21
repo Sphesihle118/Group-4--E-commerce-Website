@@ -1,4 +1,6 @@
 import {NavLink} from "react-router-dom";
+import React from "react";
+import {productDetails2} from "../../data/productDetails2.js";
 
 export const ShoppingBag = () => {
     return(
@@ -11,11 +13,18 @@ export const ShoppingBag = () => {
                         Bag
                     </div>
                     <div className="grid grid-cols-3 gap-4">
-                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">k</div>
-                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">k</div>
-                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">k</div>
-                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">k</div>
-                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">k</div>
+                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
+                            <img src={productDetails2[0].productIMG2} alt={productDetails2[0].name} className="mx-auto"/>
+                        </div>
+                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
+                            <img src={productDetails2[1].productIMG2} alt={productDetails2[1].name} className="mx-auto"/>
+                        </div>
+                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
+                            <img src={productDetails2[2].productIMG2} alt={productDetails2[2].name} className="mx-auto"/>
+                        </div>
+                        <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
+                            <img src={productDetails2[3].productIMG2} alt={productDetails2[3].name} className="mx-auto"/>
+                        </div>
                     </div>
 
                     <NavLink to="/check-bag">

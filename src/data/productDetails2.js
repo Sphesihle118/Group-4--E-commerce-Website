@@ -15,6 +15,7 @@ export const productDetails2 = [
         name: "Iphone 11",
         smallDescription: "Navy Blue",
         productIMG: "/blueiphone.png",
+        productIMG2: "/smBlue.png",
         price: '$' + 729.99,
         rating: "4.5/5",
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero."
@@ -25,6 +26,7 @@ export const productDetails2 = [
         name: "Iphone 11",
         smallDescription: "Milky White",
         productIMG: "/whiteIphone.png",
+        productIMG2: "/smWhite.png",
         rating: "4.5/5",
         price: '$'+ 619.99,
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero."
@@ -36,6 +38,7 @@ export const productDetails2 = [
         name: "Iphone 11",
         smallDescription: "Black",
         productIMG: "/blackIphone.png",
+        productIMG2: "/Iphone11Black2.png",
         rating: "4.5/5",
         price: '$' + 619.99,
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus imperdiet mattis. Proin in quis ipsum non amet imperdiet. Dignissim nisi leo a at. Sit nec lacus, nunc volutpat, tincidunt lorem mi duis. Vitae elementum libero."

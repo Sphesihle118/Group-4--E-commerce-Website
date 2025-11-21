@@ -16,13 +16,13 @@ export const ShoppingBag2 = () => {
                             <img src={productDetails2[0].productIMG2} alt={productDetails2[0].name} className="mx-auto"/>
                         </div>
                         <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
-                            <img src={productDetails2[1].productIMG} alt={productDetails2[1].name} className="mx-auto"/>
+                            <img src={productDetails2[1].productIMG2} alt={productDetails2[1].name} className="mx-auto"/>
                         </div>
                         <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
-                            <img src={productDetails2[2].productIMG} alt={productDetails2[2].name} className="mx-auto"/>
+                            <img src={productDetails2[2].productIMG2} alt={productDetails2[2].name} className="mx-auto"/>
                         </div>
                         <div className="w-[80px] h-[80px] bg-white rounded-[12px]">
-                            <img src={productDetails2[3].productIMG} alt={productDetails2[3].name} className="mx-auto"/>
+                            <img src={productDetails2[3].productIMG2} alt={productDetails2[3].name} className="mx-auto"/>
                         </div>
 
 
